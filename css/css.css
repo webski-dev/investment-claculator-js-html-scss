@@ -145,6 +145,10 @@ h3 {
   padding: 0.5rem;
   font-size: 0.8rem;
 }
+.container-slider .range-for-slider-span-proportion,
+.container-slider-proportion .range-for-slider-span-proportion {
+  justify-content: center;
+}
 
 .slider {
   -webkit-appearance: none;
