@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetalMarket - Investment Calculator</title>
+
+    <link rel="stylesheet" href="css/css.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="input-content-left-top">
+        <br />
+        <br />
+        <img class="logo-img" src="assets/logo_6_big.svg" alt="logo" />
+        <h3>Your metal combination</h3>
+        <div class="metal-select-bar" id="metalSelectBar">
+          <button class="metal-select-button">GOLD</button
+          ><button class="metal-select-button">SILVER</button
+          ><button class="metal-select-button">GOLD + SILVER</button>
+        </div>
+        <br />
+        <h3>How much you are willing to invest?</h3>
+        <span class="ammount_slider_span"
+          ><span>PLN</span>
+          <span id="investAmmount" style="font-weight: bold; color: red"
+            >50</span
+          ><span style="font-weight: bold; color: red">.00</span></span
+        >
+        <div class="container-slider">
+          <input
+            type="range"
+            min="0.00"
+            max="10000.00"
+            value="0.00"
+            step="1"
+            class="slider"
+            id="myRange"
+          />
+          <span class="range-for-slider-span"
+            ><span>0</span><span>10,000</span></span
+          >
+        </div>
+
+        <h3>Set metal proportions</h3>
+        <span class="proportions_span">
+          <span class="proportion_slider_span">
+            <span class="gold">
+              <span>GOLD</span>
+              <span id="investProportion" style="font-weight: bold; color: red"
+                >50</span
+              ><span style="font-weight: bold; color: red">%</span></span
+            >
+
+            <span class="silver">
+              <span>SILVER</span>
+              <span
+                id="investProportionSilver"
+                style="font-weight: bold; color: red"
+                >50</span
+              ><span style="font-weight: bold; color: red">%</span></span
+            >
+          </span>
+        </span>
+
+        <div class="container-slider-proportion">
+          <input
+            type="range"
+            min="0.00"
+            max="100.00"
+            value="50.00"
+            step="1.00"
+            class="slider"
+            id="myRangeProportion"
+          />
+          <span class="range-for-slider-span-proportion"
+            ><span>0</span><span>100%</span></span
+          >
+        </div>
+        <button class="submit-button">View options now!</button>
+      </div>
+    </div>
+
+    <script src="js/sliders.js"></script>
+  </body>
+</html>

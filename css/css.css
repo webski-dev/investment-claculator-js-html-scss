@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+}
+
+:root {
+  --solidBlack: #000000;
+  --background-colour: #4553d1;
+  --background-colour-container: #fffafa;
+  --background-colour-metal-select-bar: #e5e8ea;
+  --container-border-radius: 1rem;
+  --padding-container: 2rem;
+  --colour-metal-select-bar-border-radius: 0.25rem;
+  --container-margin-space: 3rem;
+  --metal-select-button-background: #fffafa;
+  --metal-select-button-hover: #747474;
+  --container-margin-space-top: 1rem;
+}
+
+body {
+  background-color: var(--background-colour);
+  min-height: 100vh;
+  font-family: Nunito Sans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ALL BUTTONS STYLED HERE */
+.metal-select-button {
+  border-style: none;
+  background-color: var(--metal-select-button-background);
+  cursor: pointer;
+  border-radius: var(--colour-metal-select-bar-border-radius);
+}
+.metal-select-button:hover, .metal-select-button:active {
+  background-color: var(--solidBlack);
+  color: var(--background-colour-container);
+}
+
+.submit-button {
+  margin-top: 1rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--colour-metal-select-bar-border-radius);
+  border: none;
+  background-color: var(--solidBlack);
+  color: var(--background-colour-container);
+  height: 2.5rem;
+  width: 10rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.submit-button:hover {
+  background-color: var(--background-colour);
+}
+
+/* TAGS STYLED HERE */
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* lOGO STYLED HERE */
+.logo-img {
+  width: 9rem;
+  position: relative;
+  top: -4rem;
+}
+
+/* CONTAINER & CONTENT'S STYLED HERE INC SLIDERS */
+.container {
+  display: flex;
+  padding: var(--padding-container);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-colour-container);
+  width: 30rem;
+  height: 75vh;
+  border-radius: var(--container-border-radius);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.container .input-content-left-top,
+.container .summary-content-right-bottom {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.container .input-content-left-top .metal-select-bar,
+.container .summary-content-right-bottom .metal-select-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--background-colour-metal-select-bar);
+  width: 20rem;
+  height: 2rem;
+  border-radius: var(--colour-metal-select-bar-border-radius);
+  margin-top: var(--container-margin-space-top);
+  margin-bottom: var(--container-margin-space);
+}
+.container .summary-content-right-bottom {
+  text-align: center;
+}
+
+.ammount_slider_span,
+.proportion_slider_span {
+  margin-top: var(--container-margin-space-top);
+}
+
+.proportions_span {
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gold {
+  margin-right: 8.5rem;
+}
+
+.container-slider,
+.container-slider-proportion {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  margin-top: var(--container-margin-space-top);
+  margin-bottom: var(--container-margin-space);
+  width: 20rem;
+}
+.container-slider .range-for-slider-span,
+.container-slider .range-for-slider-span-proportion,
+.container-slider-proportion .range-for-slider-span,
+.container-slider-proportion .range-for-slider-span-proportion {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--background-colour);
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover {
+  background: var(--solidBlack);
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+/* MEDIA QUERY STARTS HERE*/
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 20rem;
+  }
+}/*# sourceMappingURL=css.css.map */
